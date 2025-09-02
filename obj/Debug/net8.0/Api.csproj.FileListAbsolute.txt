@@ -175,3 +175,4 @@ C:\Users\77174\OneDrive\Escritorio\Backend\Solution1\Api\obj\Debug\net8.0\Api.ge
 C:\Users\77174\OneDrive\Escritorio\Backend\Solution1\Api\obj\Debug\net8.0\ref\Api.dll
 C:\Users\77174\OneDrive\Escritorio\Backend\Solution1\Api\bin\Debug\net8.0\Aplication.dll
 C:\Users\77174\OneDrive\Escritorio\Backend\Solution1\Api\bin\Debug\net8.0\Aplication.pdb
+C:\Users\77174\OneDrive\Escritorio\Backend\Solution1\Api\obj\Debug\net8.0\Api.sourcelink.json

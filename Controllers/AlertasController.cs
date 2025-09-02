@@ -1,16 +1,18 @@
-﻿using System;
+﻿using Aplication.DTOs;
+using Aplication.UsesCases.Alertas;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Aplication.DTOs;
-using Aplication.UsesCases.Alertas;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("Cors")]
     public class AlertasController : ControllerBase
     {
         private readonly ListarAlertas _listar;

@@ -1,14 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using Aplication.UsesCases.Proveedores;
+using Domain.Entities;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Aplication.UsesCases.Proveedores;
-using Domain.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("Cors")]
     public class ProveedoresController : ControllerBase
     {
         private readonly ListarProveedores _listar;

@@ -104,6 +104,17 @@ builder.Services.AddScoped<ListarVentas>();
 builder.Services.AddScoped<RegistrarVenta>();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Cors", policy =>
+    {
+        policy
+              .AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // Pipeline

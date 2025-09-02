@@ -1,16 +1,18 @@
-﻿using System;
+﻿using Aplication.UsesCases.Clientes;
+using Domain.Entities;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Aplication.UsesCases.Clientes;
-using Domain.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("Cors")]
     public class ClientesController : ControllerBase
     {
         private readonly ListarClientes _listar;

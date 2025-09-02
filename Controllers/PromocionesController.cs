@@ -1,17 +1,19 @@
-﻿using System;
+﻿using Aplication.DTOs;
+using Aplication.UsesCases.Promociones;  // <- usa tus use cases
+using Domain.Entities;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Aplication.DTOs;
-using Aplication.UsesCases.Promociones;  // <- usa tus use cases
-using Domain.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("Cors")]
     public class PromocionesController : ControllerBase
     {
         private readonly ListarPromociones _listar;
